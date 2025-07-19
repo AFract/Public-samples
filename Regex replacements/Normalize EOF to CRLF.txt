@@ -1,0 +1,7 @@
+Normalize EOF to CRLF in Grepwin :
+
+([^\r])?\n
+
+By
+
+\1\r\n

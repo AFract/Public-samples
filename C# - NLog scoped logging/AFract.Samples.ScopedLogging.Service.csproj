@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-AFract.Samples.ScoppedLogging.Service-37f450bf-1ca3-47d4-8bc6-427d946a0741</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
+		<PackageReference Include="NLog" Version="5.3.4" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.3.14" />
+		<PackageReference Include="MediatR" Version="12.4.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="9.0.0" />
+		<PackageReference Include="Autofac" Version="8.1.1" />
+		<PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="12.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Update="NLog.config">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>

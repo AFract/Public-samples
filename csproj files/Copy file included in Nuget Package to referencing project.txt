@@ -1,0 +1,16 @@
+In nuget package .csproj :
+
+<Content Include="test.xyz">
+  <Pack>true</Pack>
+  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  <PackageCopyToOutput>true</PackageCopyToOutput>
+  <!--<PackagePath>contentFiles;content</PackagePath>-->
+</Content>
+
+
+Optionally, in referencing project : 
+<ProjectReference Include="..\DependencyProject\DependencyProject.csproj">
+  <PrivateAssets>analyzers;build</PrivateAssets>
+</ProjectReference>
+
+"PrivateAssets" is required for projects referenced as transitive project, not for direct dependencies

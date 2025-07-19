@@ -1,0 +1,86 @@
+# Generated with 
+# dotnet tool install --global httpgenerator
+# httpgenerator https://localhost:7023/openapi/v1.json --output-type OneFile
+
+@baseUrl = https://localhost:7023
+@contentType = application/json
+
+############################
+### Request: GET /Employee
+############################
+
+
+GET {{baseUrl}}/Employee
+Content-Type: {{contentType}}
+
+
+#############################
+### Request: POST /Employee
+#############################
+
+
+POST {{baseUrl}}/Employee
+Content-Type: {{contentType}}
+
+{
+  "employeeId": "employeeId",
+  "name": "name",
+  "position": "position",
+  "department": "department",
+  "address": "address",
+  "annualSalary": 0.0
+}
+
+##################################
+### Request: GET /Employee/Count
+##################################
+
+
+GET {{baseUrl}}/Employee/Count
+Content-Type: {{contentType}}
+
+
+#################################
+### Request: GET /Employee/{id}
+#################################
+
+### Path Parameter: GetEmployee{id}_id
+@GetEmployeeid = str
+
+
+GET {{baseUrl}}/Employee/{{GetEmployeeid}}
+Content-Type: {{contentType}}
+
+
+#################################
+### Request: PUT /Employee/{id}
+#################################
+
+### Path Parameter: PutEmployee{id}_id
+@PutEmployeeid = str
+
+
+PUT {{baseUrl}}/Employee/{{PutEmployeeid}}
+Content-Type: {{contentType}}
+
+{
+  "employeeId": "employeeId",
+  "name": "name",
+  "position": "position",
+  "department": "department",
+  "address": "address",
+  "annualSalary": 0.0
+}
+
+####################################
+### Request: DELETE /Employee/{id}
+####################################
+
+### Path Parameter: DeleteEmployee{id}_id
+@DeleteEmployeeid = 003e17f1-093a-446b-abda-e44034782e07
+
+
+DELETE {{baseUrl}}/Employee/{{DeleteEmployeeid}}
+Content-Type: {{contentType}}
+
+

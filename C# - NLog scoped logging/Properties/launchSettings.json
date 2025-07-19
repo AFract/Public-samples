@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "AFract.Samples.ScopedLogging.Service": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

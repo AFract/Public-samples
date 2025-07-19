@@ -1,0 +1,6 @@
+In nuget package .csproj :
+
+		<Content Include="$(SolutionDir)FolderOutsideProject\**\*.*">
+			<Pack>true</Pack>
+			<PackagePath>contentFiles\cs\any\Thing\%(Filename)%(Extension)</PackagePath>
+		</Content>

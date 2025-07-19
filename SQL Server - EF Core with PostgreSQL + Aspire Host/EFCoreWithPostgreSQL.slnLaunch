@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "Console Project + Web API",
+    "Projects": [
+      {
+        "Path": "WebAPI\\EFCoreWithPostgreSQL.WebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Console\\EFCoreWithPostgreSQL.Console.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "Aspire host",
+    "Projects": [
+      {
+        "Path": "AspireHost\\EFCoreWithPostgreSQL.AspireHost.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
